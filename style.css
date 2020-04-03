@@ -1,0 +1,253 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 100%;
+    margin:0;
+    font-size: 1em;
+    line-height: 1.4;
+    color:rgb(58, 57, 57);
+}
+.intro .logo{
+    font-size: 1.5em;
+    font-weight: bold;
+    color:lightcoral;
+}
+.intro nav{
+    display: flex;
+    padding:0.1em 5em;
+    justify-content: space-between;
+    align-items: center;
+    height: 3em;
+    z-index: 1;
+    background-color: rgb(255, 255, 255, 0.98);
+    box-shadow: 0px 0px 5px grey;
+    position: fixed;
+    top:0%;
+    left:0%;
+    right:0%;
+}
+.intro nav ul{
+    display: flex;
+    float: right;
+    justify-content: space-around;
+    font-size: 1em;
+    list-style:none;
+    font-weight: bold;
+    height: 100%;
+    align-items: center;
+}
+.intro nav ul li{
+    color:rgb(192, 183, 183);
+    margin-left: 1em;
+    
+}
+.intro nav ul li:hover{
+    border-bottom: solid cadetblue;
+    color: rgb(2, 84, 87);
+    
+}
+.intro-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#293039;
+    padding:0.1em 5em;
+    color: honeydew;
+}
+.pink-box{
+    height:0.7em;
+    background-color: lightcoral;
+}
+.grey-box{
+    background-color: rgb(243, 243, 243, 0.7);  
+}
+h1{
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    margin-top: 2em;
+    font-size: 2.5em;
+}
+h2, h3, h4, h5, h6 {
+    font-family: "Font Awesome 5 Free"; 
+    color: #226377;
+    font-weight: bold;
+    line-height: 1.4;
+    /* padding-bottom: 1em;
+    padding-top: 2em; */
+}
+h2 {
+    font-family: "Font Awesome 5 Free"; 
+    font-size: 1.8em;   
+    color:teal;
+    text-align: center;
+    margin-bottom: 0em;
+    line-height: 1.4;
+    padding:0.8em 0em 0.6em 0em;
+    font-weight: bold;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+
+}
+.text-center{
+    padding:0.1em 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.text-center span{
+    font-weight: bold;
+    color:red;
+}
+.text-justify{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+  
+}
+.flex-sec-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    /* background-color: #EDF2F4; */
+}
+.flex-sec-container img{
+    border-radius: 0.5em;
+    max-width: 50%;
+}
+.flex-sec-container ul{
+    line-height: 2;
+}
+.effort-sec{
+    padding:1.5em 5em 0em;
+    /* background-color: #fff7f8; */
+}
+
+.img-background{
+    /* background-image: url("img/DarkBlue\ Forest.jpg"); */
+    /* filter: grayscale(100%); */
+    background-image: url("img/wallpaper-abstracto-3d.jpg");
+    display: flex;
+    flex-direction: column;
+    padding:0.1em 5em;
+}
+.transparent-box{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.4em;
+    background-color: rgba(255, 253, 253, 0.8);
+    margin: 0.6em 0em;
+    padding: 1em;
+    text-align: center;
+}
+.transparent-box h2{
+    margin-top: 0;
+    margin-bottom: 0.2em;
+    padding: 0em 0em;
+}
+.intermidiate{
+    padding:0.1em 5em;
+    margin: 1.5em 0em;
+    text-align: center;
+}
+.intermidiate .title{
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.5em;
+    color: rgb(218, 15, 137);
+}
+.headers{
+    padding:0.1em 5em;
+    text-align:center;
+    margin-bottom: 3.5em;
+}
+.headers .boxes{
+display: flex;
+justify-content: space-between;
+
+}
+.box{
+    border: 1px solid rgb(125, 144, 152);
+    border-radius: 1em;
+    max-width: 18em;
+    padding:2em;
+    box-shadow: 0.4em 0.5em rgb(152, 197, 191);
+}
+.links{
+    display: flex;
+    padding: 0em 5em;
+    min-height: 100%;
+    justify-content: space-between;
+    text-align: justify;
+    background-color: #EFF2F7;
+    align-items: center;
+}
+.links h2{
+    text-align: justify;
+}
+.links div{
+    max-width: 45%;
+}
+.links img{
+    max-width: 45%;
+}
+.quotes{
+    padding: 0em 5em;
+    margin-bottom: 5em;
+    text-align: justify;
+}
+.quotes blockquote{
+    border-left: 0.4em solid lightseagreen;
+    padding-left: 0.8em;
+    font-family:serif;
+    font-size: 1.2em;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#293039;
+    padding:0.1em 5em;
+    color: honeydew;
+    flex-direction: column;
+}
+fgroup{
+    display: flex;
+width:100%;
+align-items: center;
+justify-content: center;
+}
+.copyright{
+    border-top: 1px solid lightgrey;
+    width:100%;
+}
+.shadow{
+    text-shadow: 0.06em 0.03em rgb(235, 228, 228);
+    }
+a{
+    color:brown;
+    text-decoration: none;
+}
+/* a:visited{
+    color:rgb(163, 122, 7);
+    text-decoration: none;
+} */
+a :active{
+    color:rgb(214, 12, 12);
+    text-decoration: none;
+}
+.satireAuthorEpilogue{
+ display:flex;
+ justify-content: space-between;
+ /* max-width: 65%; */
+}
+.satireAndauthor{
+    display:flex;
+    flex-direction: column;
+    max-width: 64%;  
+}
+.epilogue{
+    max-width: 32%;  
+}
