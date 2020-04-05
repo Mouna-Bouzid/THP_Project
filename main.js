@@ -1,6 +1,6 @@
 const addContrast= document.getElementById('addContrast')
 const invertedMode= document.getElementById('invertedMode')
-
+const psychedelicMode= document.getElementById('psychedelic')
 const body=document.getElementsByTagName('body')[0]
 
 function styleFunction(element, addClass, arr){
@@ -23,6 +23,10 @@ function addSomeContrast(){
 function addInvertedMode(){
     styleFunction(invertedMode, "inverted", ["Normal Mode", "Inverted Mode"]);
 }
+function addpsychedelicMode(){
+    styleFunction(psychedelicMode, "psychedelic", ["Normal Mode", "Psychedelic Mode"]);
+}
 
 addSomeContrast();
-addInvertedMode()
+addInvertedMode();
+addpsychedelicMode();
