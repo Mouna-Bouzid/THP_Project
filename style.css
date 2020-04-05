@@ -70,12 +70,15 @@
 	body.psychedelic .intro #psychedelic {
 		color: whitesmoke;
 	}
-	.intro .logo {
+	header .logo {
 		font-size: 1.6em;
 		font-weight: bold;
 		color: lightcoral;
 	}
-	.intro nav {
+	#menu-icon {
+		display: none;	
+	}
+	header {
 		display: flex;
 		padding: 0.1em 5em;
 		justify-content: space-between;
@@ -90,9 +93,9 @@
 		right: 0%;
 	}
 
-	.intro nav ul {
+	header nav ul {
 		display: flex;
-		float: right;
+		float: left;
 		justify-content: space-around;
 		font-size: 1em;
 		list-style: none;
@@ -100,11 +103,12 @@
 		height: 100%;
 		align-items: center;
 	}
-	.intro nav ul li {
+	header nav ul li {
+		display: inline-block;
 		color: rgb(192, 183, 183);
 		margin-left: 1em;
 	}
-	.intro nav ul li:hover {
+	header nav ul li:hover {
 		border-bottom: solid cadetblue;
 		color: rgb(2, 84, 87);
 	}
@@ -391,11 +395,12 @@
 		background-color: black;
 		color: white;
 	}
-	body.inverted .intro #addContrast,
-	body.inverted .intro #psychedelic {
+	body.inverted header #addContrast,
+	body.inverted header #psychedelic {
 		display: none;
 	}
-	body.inverted .intro nav,
+	body.inverted header,
+	body.inverted header ul,
 	body.inverted .intro-container,
 	body.inverted .grey-box,
 	body.inverted .links,
@@ -406,7 +411,8 @@
 		background-color: rgb(0, 0, 0, 0.8);
 	}
 	body.psychedelic,
-	body.psychedelic .intro nav,
+	body.psychedelic header,
+	body.psychedelic header ul,
 	body.psychedelic .intro-container,
 	body.psychedelic .grey-box,
 	body.psychedelic .links,
@@ -424,8 +430,8 @@
 		color: green;
 		font-family: 'Comic Sans';
 	}
-	body.psychedelic .intro #addContrast,
-	body.psychedelic .intro #invertedMode {
+	body.psychedelic header #addContrast,
+	body.psychedelic header #invertedMode {
 		display: none;
 	}
 	body.psychedelic .img-background {
@@ -439,43 +445,55 @@
 		border-bottom: 1px solid rgb(192, 183, 183);
 	}
 	body.psychedelic .logo,
-	body.psychedelic .intro #psychedelic {
+	body.psychedelic header #psychedelic {
 		color: whitesmoke;
 	}
-	.intro .logo {
+	header .logo {
 		font-size: 1.4em;
 		font-weight: bold;
 		color: lightcoral;
 	}
-	.intro nav {
-		display: flex;
+	header {
+	    display: flex;
 		padding: 0.1em 3em;
 		justify-content: space-between;
 		align-items: center;
 		height: 3em;
-		z-index: 1;
+		z-index: 100;
 		background-color: rgb(255, 255, 255, 0.98);
-		box-shadow: 0px 0px 3px grey;
 		position: fixed;
 		top: 0%;
 		left: 0%;
 		right: 0%;
 	}
-	.intro nav ul {
-		display: flex;
-		float: right;
-		justify-content: space-around;
-		font-size: 1em;
+	#menu-icon {
+		display: inline-block;
+	}
+
+	header nav ul, header nav:active ul {
+		display: none;
+		position: absolute;
+		padding: 0.2em;
+		margin:0;
+		background-color: rgb(238, 238, 238);
+		right: 0;
+		top: 2.3em;
+		width: 35%;
+		
+	}
+	header nav:hover ul {
+		display: block;
 		list-style: none;
-		font-weight: bold;
-		height: 100%;
-		align-items: center;
 	}
-	.intro nav ul li {
-		color: rgb(192, 183, 183);
-		margin-left: 1em;
+	header nav li {
+		text-align: center;
+		width: 100%;
+		padding: 15px 0;
+		margin: 0;
 	}
-	.intro nav ul li:hover {
+	
+	
+	header nav ul li:hover {
 		border-bottom: solid cadetblue;
 		color: rgb(2, 84, 87);
 	}
@@ -486,7 +504,7 @@
 		background-color: #031327;
 		padding: 2em 3em;
 		color: honeydew;
-		font-size: 0.7em;
+		/* font-size: 0.7em; */
 	}
 	.web-title {
 		max-width: 50%;
@@ -771,11 +789,12 @@
 		background-color: black;
 		color: white;
 	}
-	body.inverted .intro #addContrast,
-	body.inverted .intro #psychedelic {
+	body.inverted header #addContrast,
+	body.inverted header #psychedelic {
 		display: none;
 	}
-	body.inverted .intro nav,
+	body.inverted header nav,
+	body.inverted header nav ul,
 	body.inverted .intro-container,
 	body.inverted .grey-box,
 	body.inverted .links,
@@ -786,7 +805,8 @@
 		background-color: rgb(0, 0, 0, 0.8);
 	}
 	body.psychedelic,
-	body.psychedelic .intro nav,
+	body.psychedelic header nav,
+	body.psychedelic header nav ul,
 	body.psychedelic .intro-container,
 	body.psychedelic .grey-box,
 	body.psychedelic .links,
@@ -804,8 +824,8 @@
 		color: green;
 		font-family: 'Comic Sans';
 	}
-	body.psychedelic .intro #addContrast,
-	body.psychedelic .intro #invertedMode {
+	body.psychedelic header #addContrast,
+	body.psychedelic header #invertedMode {
 		display: none;
 	}
 	body.psychedelic .img-background {
@@ -819,43 +839,54 @@
 		border-bottom: 1px solid rgb(192, 183, 183);
 	}
 	body.psychedelic .logo,
-	body.psychedelic .intro #psychedelic {
+	body.psychedelic header #psychedelic {
 		color: whitesmoke;
 	}
-	.intro .logo {
-		font-size: 0.7em;
+	header .logo {
+		font-size: 1em;
 		font-weight: bold;
 		color: lightcoral;
 	}
-	.intro nav {
-		display: flex;
+	header {
+	    display: flex;
 		padding: 0.1em 1em;
 		justify-content: space-between;
 		align-items: center;
+		background-color: rgb(255, 255, 255, 0.98);
 		height: 2em;
 		z-index: 1;
-		background-color: rgb(255, 255, 255, 0.98);
-		box-shadow: 0px 1px grey;
 		position: fixed;
 		top: 0%;
 		left: 0%;
 		right: 0%;
 	}
-	.intro nav ul {
-		display: flex;
-		float: right;
-		justify-content: space-around;
-		font-size: 0.5em;
+	#menu-icon {
+		display: inline-block;
+	}
+
+	header nav ul, header nav:active ul {
+		display: none;
+		position: absolute;
+		padding: 0.2em;
+		margin:0;
+		background-color: rgb(238, 238, 238);
+		right: 0;
+		top: 1.8em;
+		width: 35%;
+		
+	}
+	header nav:hover ul {
+		display: block;
 		list-style: none;
-		font-weight: bold;
-		height: 100%;
-		align-items: center;
 	}
-	.intro nav ul li {
-		color: rgb(192, 183, 183);
-		margin-left: 1em;
+	header nav li {
+		text-align: center;
+		width: 100%;
+		padding: 15px 0;
+		margin: 0;
 	}
-	.intro nav ul li:hover {
+
+	header nav ul li:hover {
 		border-bottom: solid cadetblue;
 		color: rgb(2, 84, 87);
 	}
