@@ -2,6 +2,8 @@ const addContrast= document.getElementById('addContrast')
 const invertedMode= document.getElementById('invertedMode')
 const psychedelicMode= document.getElementById('psychedelic')
 const body=document.getElementsByTagName('body')[0]
+const modal=document.getElementById('myModal')
+var closeModal = document.getElementsByClassName("close")[0];
 
 function styleFunction(element, addClass, arr){
     
@@ -26,6 +28,20 @@ function addInvertedMode(){
 function addpsychedelicMode(){
     styleFunction(psychedelicMode, "psychedelic", ["Normal Mode", "Psychedelic Mode"]);
 }
+
+setTimeout( 
+function() {
+    modal.style.display = "block";
+  }, 2000)
+
+  closeModal.onclick = function() {
+    modal.style.display = "none";
+  }
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
 
 addSomeContrast();
 addInvertedMode();
