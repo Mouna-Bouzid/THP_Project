@@ -32,7 +32,7 @@ function addpsychedelicMode(){
 setTimeout( 
 function() {
     modal.style.display = "block";
-  }, 2000)
+  }, 10000)
 
   closeModal.onclick = function() {
     modal.style.display = "none";
