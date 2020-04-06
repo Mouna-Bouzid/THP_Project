@@ -2,7 +2,8 @@
 	body {
 		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
 			sans-serif;
-		max-width: 100%;
+		max-width: auto;
+		max-height: auto;
 		margin: 0;
 		font-size: 1em;
 		line-height: 1.4;
@@ -19,11 +20,11 @@
 		background-color: black;
 		color: white;
 	}
-	body.inverted .intro #addContrast,
-	body.inverted .intro #psychedelic {
+	body.inverted header #addContrast,
+	body.inverted header #psychedelic {
 		display: none;
 	}
-	body.inverted .intro nav,
+	body.inverted header,
 	body.inverted .intro-container,
 	body.inverted .grey-box,
 	body.inverted .links,
@@ -34,7 +35,7 @@
 		background-color: rgb(0, 0, 0, 0.8);
 	}
 	body.psychedelic,
-	body.psychedelic .intro nav,
+	body.psychedelic header,
 	body.psychedelic .intro-container,
 	body.psychedelic .grey-box,
 	body.psychedelic .links,
@@ -52,8 +53,8 @@
 		color: green;
 		font-family: 'Comic Sans';
 	}
-	body.psychedelic .intro #addContrast,
-	body.psychedelic .intro #invertedMode {
+	body.psychedelic header #addContrast,
+	body.psychedelic header #invertedMode {
 		display: none;
 	}
 	body.psychedelic .img-background {
@@ -85,7 +86,7 @@
 		align-items: center;
 		height: 3em;
 		z-index: 1;
-		box-shadow: 0px 0px 5px grey;
+		box-shadow: 0px 0px 0.3em grey;
 		position: fixed;
 		top: 0%;
 		left: 0%;
@@ -113,7 +114,7 @@
 	}
 	.intro-container {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 		background-color: #031327;
 		padding: 3em 5em;
@@ -174,9 +175,10 @@
 	}
 	.flex-sec-container {
 		display: flex;
-		justify-content: space-between;
+		/* width:100%; */
+		justify-content: center;
 		align-items: center;
-		align-content: space-between;
+		/* align-content: space-between; */
 	}
 	.flex-sec-container img {
 		border-radius: 0.5em;
@@ -189,7 +191,7 @@
 		padding: 1.5em 5em 0em;
 	}
 	.intermidiate {
-		padding: 0.1em em;
+		padding: 0.1em 5em;
 
 		text-align: center;
 	}
@@ -258,7 +260,7 @@
 		justify-content: space-between;
 		text-align: justify;
 		background-color: #eff2f7;
-		align-items: center;
+		
 	}
 	.links h2 {
 		text-align: justify;
@@ -319,7 +321,6 @@
 		display: none;
 		position: fixed;
 		z-index: 1;
-		padding: 4em;
 		left: 0;
 		top: 0;
 		width: 100%;
@@ -327,6 +328,8 @@
 		overflow: auto;
 		background-color: rgb(0, 0, 0);
 		background-color: rgba(0, 0, 0, 0.7);
+		justify-content: center;
+		align-items: center;
 	}
 
 	.modal-content {
@@ -341,6 +344,8 @@
 		border: 1px solid #888;
 		width: 60%;
 		font-size: 1.2em;
+		justify-content: center;
+		height: min-content;
 	}
 	.close {
 		color: #aaaaaa;
@@ -372,12 +377,17 @@
 		display: flex;
 		justify-content: space-around;
 	}
+    main{
+		display: flex;
+    flex-direction: column;
+	}
 }
 @media only screen and (min-width: 416px) and (max-width: 919px) {
 	body {
 		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
 			sans-serif;
-		max-width: 100%;
+		max-width: auto;
+		max-height: auto;
 		margin: 0;
 		font-size: 1em;
 		line-height: 1.4;
@@ -456,6 +466,7 @@
 	    display: flex;
 		padding: 0.1em 3em;
 		justify-content: space-between;
+		border-bottom: 0.5px solid rgb(58, 58, 58 , 0.7);
 		align-items: center;
 		height: 3em;
 		z-index: 100;
@@ -577,9 +588,7 @@
 		line-height: 1.4;
 		text-align: justify;
 	}
-	.flex-sec-container img {
-		display: none;
-	}
+	
 	.effort-sec {
 		padding: 1.5em 3em 0em;
 	}
@@ -636,7 +645,7 @@
 	}
 	.quotes {
 		padding: 0em 3em;
-		margin-bottom: 5em;
+		margin-bottom: 2.3em;
 		text-align: justify;
 	}
 	.quotes blockquote {
@@ -648,19 +657,22 @@
 	.links {
 		display: flex;
 		padding: 0em 3em;
-		min-height: 100%;
+		/* height: 100%; */
 		justify-content: space-between;
 		text-align: justify;
 		background-color: #eff2f7;
-		align-items: center;
+		
 	}
 	.links h2 {
 		text-align: center;
 		padding: 0;
 	}
 
+	.links div {
+		max-width: 45%;
+	}
 	.links img {
-		display: none;
+		max-width: 45%;
 	}
 	footer {
 		display: flex;
@@ -716,7 +728,6 @@
 		display: none;
 		position: fixed;
 		z-index: 1;
-		padding: 4em;
 		left: 0;
 		top: 0;
 		width: 100%;
@@ -724,8 +735,12 @@
 		overflow: auto;
 		background-color: rgb(0, 0, 0);
 		background-color: rgba(0, 0, 0, 0.7);
-	}
+		justify-content: center;
+		align-items: center;
 
+	}
+	
+	
 	.modal-content {
 		color: black;
 		border-radius: 1em;
@@ -733,7 +748,7 @@
 		display: flex;
 		flex-direction: column;
 		background-color: #fefefe;
-		margin: 4em;
+		justify-content: center;
 		padding: 3em;
 		border: 1px solid #888;
 		width: 60%;
@@ -764,6 +779,10 @@
 	.modal-content button:hover {
 		background-color: royalblue;
 		color: white;
+	}
+	main{ 
+		display: flex;
+		flex-direction: column;
 	}
 }
 @media only screen and (max-width: 415px) {
@@ -849,6 +868,7 @@
 	    display: flex;
 		padding: 0.1em 1em;
 		justify-content: space-between;
+		border-bottom: 0.5px solid rgb(58, 58, 58 , 0.5);
 		align-items: center;
 		height: 2em;
 		z-index: 1;
@@ -1085,7 +1105,6 @@
 		display: none;
 		position: fixed;
 		z-index: 1;
-		padding: 4em;
 		left: 0;
 		top: 0;
 		width: 100%;
@@ -1093,6 +1112,8 @@
 		overflow: auto;
 		background-color: rgb(0, 0, 0);
 		background-color: rgba(0, 0, 0, 0.7);
+		justify-content: center;
+        align-items: center;
 	}
 
 	.modal-content {
@@ -1101,11 +1122,13 @@
 		text-align: center;
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
 		background-color: #fefefe;
 		border: 1px solid #888;
 		width: 60%;
 		padding: 1em;
 		font-size: 0.7em;
+		height: min-content;
 	}
 	.close {
 		color: #aaaaaa;

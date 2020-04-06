@@ -33,7 +33,7 @@ function addpsychedelicMode(){
 
 setTimeout( 
 function() {
-    modal.style.display = "block";
+    modal.style.display = "flex";
   }, 10000)
 
 closeModal.addEventListener('click', function(){
@@ -49,12 +49,14 @@ window.onclick = function(event) {
   window.onscroll = function() {scrollFunction()};
 
   function scrollFunction() {
+    if (document.body.classList.value===""){
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
       header.style.backgroundColor = "rgb(255, 255, 255, 0.98)";
     } else {
      header.style.backgroundColor = "#031327";
     }
   }
+}
 
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
