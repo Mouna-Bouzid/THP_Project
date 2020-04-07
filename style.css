@@ -2,8 +2,7 @@
 	body {
 		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
 			sans-serif;
-		max-width: auto;
-		max-height: auto;
+		max-width: 100%;
 		margin: 0;
 		font-size: 1em;
 		line-height: 1.4;
@@ -212,6 +211,7 @@
 	}
 	.transparent-box {
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: column;
 		border-radius: 0.4em;
 		background-color: rgba(255, 253, 253, 0.8);
@@ -386,10 +386,9 @@
 	body {
 		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
 			sans-serif;
-		max-width: auto;
-		max-height: auto;
+		max-width: 100%;
 		margin: 0;
-		font-size: 1em;
+		font-size: 1.2em;
 		line-height: 1.4;
 		color: rgb(117, 112, 112);
 		display: flex;
@@ -513,7 +512,6 @@
 		background-color: #031327;
 		padding: 2em 3em;
 		color: honeydew;
-		/* font-size: 0.7em; */
 	}
 	.web-title {
 		max-width: 50%;
@@ -558,6 +556,7 @@
 	.text-center {
 		display: flex;
 		flex-direction: column;
+		flex-wrap: wrap;
 		justify-content: center;
 		text-align: justify;
 	}
@@ -657,7 +656,7 @@
 	.links {
 		display: flex;
 		padding: 0em 3em;
-		/* height: 100%; */
+		align-items: center;
 		justify-content: space-between;
 		text-align: justify;
 		background-color: #eff2f7;
@@ -1030,7 +1029,8 @@
 		max-width: 8em;
 		padding: 0.5em;
 		box-shadow: 0.4em 0.5em rgb(152, 197, 191);
-		margin-bottom: 1em;
+		margin: 0.8em;
+        flex: auto;
 	}
 	.quotes {
 		padding: 0em 1em;
