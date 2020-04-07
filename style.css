@@ -232,7 +232,7 @@
 	}
 	.headers .boxes {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 		flex-wrap: wrap;
 	}
 	.box {
@@ -632,7 +632,7 @@
 	}
 	.headers .boxes {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 		flex-wrap: wrap;
 	}
 	.box {
@@ -1016,7 +1016,7 @@
 	}
 	.headers .boxes {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 		flex-wrap: wrap;
 	}
 	.box p {
