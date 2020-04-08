@@ -16,8 +16,9 @@ function styleFunction(element, addClass, arr){
     }
     else{
         body.classList.remove(addClass)
-        element.innerHTML=arr[1]
+        element.innerHTML=arr[1]  
     }
+    
 })
 }
 
