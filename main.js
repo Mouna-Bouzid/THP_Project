@@ -7,8 +7,11 @@ const modal=document.getElementById('myModal')
 const header= document.getElementsByTagName('header')[0]
 var closeModal = document.getElementsByClassName("close")[0];
 
+
+
+
+
 function styleFunction(element, addClass, arr){
-    
     element.addEventListener('click', function(){
     if(element.innerHTML=== arr[1]){
         body.classList.add(addClass)
@@ -47,17 +50,22 @@ window.onclick = function(event) {
     }
   }
 
-  window.onscroll = function() {scrollFunction()};
-
-  function scrollFunction() {
-    if (document.body.classList.value===""){
-    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-      header.style.backgroundColor = "rgb(255, 255, 255, 0.98)";
-    } else {
-     header.style.backgroundColor = "#031327";
-    }
-  }
-}
+  
+  window.onscroll = ()=>{
+    
+     body.classList>=1 ? x=body.classList[body.classList.length - 1]: x=body.classList.value;
+     console.log(x)
+      if (x==="" || x==="contrast") { 
+        if ((document.body.scrollTop > 0 || document.documentElement.scrollTop > 30)&&(x==="" || x==="contrast")){
+        header.style.backgroundColor = "white";
+        body.classList>= 1? x=body.classList[body.classList.length - 1]: x=body.classList.value;
+      } 
+      else{ 
+       header.style.backgroundColor = "#031327";
+      }
+      }
+    } 
+    
 
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
