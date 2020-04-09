@@ -125,6 +125,7 @@
 	}
 	.grey-box {
 		background-color: #eff2f7;
+		padding: 0.1em 9em;
 	}
 	h1 {
 		font-weight: bold;
@@ -156,11 +157,10 @@
 		margin-block-end: 0em;
 	}
 	.text-center {
-		padding: 0.1em 9em;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		text-align: center;
+		text-align: justify;
 	}
 	.text-center span {
 		font-weight: bold;
