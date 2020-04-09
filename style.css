@@ -80,7 +80,7 @@
 	}
 	header {
 		display: flex;
-		padding: 0.1em 5em;
+		padding: 0.1em 9em;
 		justify-content: space-between;
 		align-items: center;
 		height: 3em;
@@ -116,11 +116,11 @@
 		justify-content: space-between;
 		align-items: center;
 		background-color: #031327;
-		padding: 3em 5em;
+		padding: 3em 9em;
 		color: honeydew;
 	}
 	.pink-box {
-		height: 0.7em;
+		height: 0.3em;
 		background-color: lightcoral;
 	}
 	.grey-box {
@@ -150,13 +150,13 @@
 		text-align: center;
 		margin-bottom: 0em;
 		line-height: 1.4;
-		padding: 0.8em 0em 0.6em 0em;
+		padding: 0.8em 0em;
 		font-weight: bold;
 		margin-block-start: 0em;
 		margin-block-end: 0em;
 	}
 	.text-center {
-		padding: 0.1em 5em;
+		padding: 0.1em 9em;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -187,10 +187,10 @@
 		line-height: 2;
 	}
 	.effort-sec {
-		padding: 1.5em 5em 0em;
+		padding: 1.5em 9em 0em;
 	}
 	.intermidiate {
-		padding: 0.1em 5em;
+		padding: 0.3em 9em;
 
 		text-align: center;
 	}
@@ -198,16 +198,16 @@
 		font-weight: bold;
 		text-decoration: underline;
 		font-size: 1.5em;
-		color: rgb(218, 15, 137);
+		color: rgb(191, 80, 147);
 	}
 	.medium-section {
-		margin: 1.5em 0em;
+		margin: 2.5em 0em 1em;
 	}
 	.img-background {
 		background-image: url("img/wallpaper-abstracto-3d.jpg");
 		display: flex;
 		flex-direction: column;
-		padding: 0.1em 5em;
+		padding: 0.1em 9em;
 	}
 	.transparent-box {
 		display: flex;
@@ -226,10 +226,13 @@
 	}
 
 	.headers {
-		padding: 0.1em 5em;
+		padding: 0.1em 9em;
 		text-align: center;
 		margin-bottom: 3.5em;
 	}
+	.headers p{
+		padding-bottom: 0.7em;
+	   }
 	.headers .boxes {
 		display: flex;
 		justify-content: space-between;
@@ -243,7 +246,7 @@
 		box-shadow: 0.4em 0.5em rgb(152, 197, 191);
 	}
 	.quotes {
-		padding: 0em 5em;
+		padding: 0em 9em;
 		margin-bottom: 5em;
 		text-align: justify;
 	}
@@ -255,7 +258,7 @@
 	}
 	.links {
 		display: flex;
-		padding: 0em 5em;
+		padding: 0em 9em;
 		min-height: 100%;
 		justify-content: space-between;
 		text-align: justify;
@@ -276,9 +279,10 @@
 		justify-content: space-between;
 		align-items: center;
 		background-color: #031327;
-		padding: 0.1em 5em;
+		padding: 1.5em 9em 0em;
 		color: honeydew;
 		flex-direction: column;
+		text-align: justify;
 	}
 	fgroup {
 		display: flex;
@@ -291,7 +295,8 @@
 		width: 100%;
 	}
 	.shadow {
-		text-shadow: 0.06em 0.03em rgb(235, 228, 228);
+		text-shadow: 0.03em 0.01em rgb(235, 228, 228);
+		
 	}
 	a {
 		color: brown;
@@ -463,7 +468,7 @@
 	}
 	header {
 	    display: flex;
-		padding: 0.1em 3em;
+		padding: 0.1em 7em;
 		justify-content: space-between;
 		border-bottom: 0.5px solid rgb(58, 58, 58 , 0.7);
 		align-items: center;
@@ -510,19 +515,19 @@
 		justify-content: space-between;
 		align-items: center;
 		background-color: #031327;
-		padding: 2em 3em;
+		padding: 2em 7em;
 		color: honeydew;
 	}
 	.web-title {
 		max-width: 50%;
 	}
 	.pink-box {
-		height: 0.7em;
+		height: 0.3em;
 		background-color: lightcoral;
 	}
 	.grey-box {
 		background-color: #eff2f7;
-		padding: 0em 3em;
+		padding: 0em 7em;
 	}
 	h1 {
 		font-weight: bold;
@@ -589,27 +594,27 @@
 	}
 	
 	.effort-sec {
-		padding: 1.5em 3em 0em;
+		padding: 1.5em 7em 0em;
 	}
 	.intermidiate {
-		padding: 0em 3em;
+		padding: 0em 7em;
 		text-align: center;
 	}
 	.intermidiate .title {
 		font-weight: bold;
 		text-decoration: underline;
 		font-size: 1.5em;
-		color: rgb(218, 15, 137);
+		color: rgb(191, 80, 147);
 		margin-top: 0;
 	}
 	.medium-section {
-		margin: 1.5em 0em;
+		margin: 2.5em 0em;
 	}
 	.img-background {
 		background-image: url("img/wallpaper-abstracto-3d.jpg");
 		display: flex;
 		flex-direction: column;
-		padding: 0.1em 3em;
+		padding: 0.1em 7em;
 	}
 	.transparent-box {
 		display: flex;
@@ -623,13 +628,17 @@
 	.transparent-box h2 {
 		margin-top: 0;
 		margin-bottom: 0.2em;
-		padding: 0em 0em;
+		padding: 0em;
 	}
 	.headers {
-		padding: 0.1em 3em;
+		padding: 0.1em 7em;
 		text-align: center;
 		margin-bottom: 3.5em;
-	}
+	} 
+	.headers p{
+		padding-bottom: 0.5em;
+	   }
+	
 	.headers .boxes {
 		display: flex;
 		justify-content: space-between;
@@ -643,7 +652,7 @@
 		box-shadow: 0.4em 0.5em rgb(152, 197, 191);
 	}
 	.quotes {
-		padding: 0em 3em;
+		padding: 0em 7em;
 		margin-bottom: 2.3em;
 		text-align: justify;
 	}
@@ -655,7 +664,7 @@
 	}
 	.links {
 		display: flex;
-		padding: 0em 3em;
+		padding: 0em 7em;
 		align-items: center;
 		justify-content: space-between;
 		text-align: justify;
@@ -678,9 +687,11 @@
 		justify-content: space-between;
 		align-items: center;
 		background-color: #031327;
-		padding: 0.1em 5em;
+		padding: 1.5em 7em 0em;
 		color: honeydew;
 		flex-direction: column;
+		text-align: justify;
+		
 	}
 	fgroup {
 		display: flex;
@@ -693,7 +704,8 @@
 		width: 100%;
 	}
 	.shadow {
-		text-shadow: 0.06em 0.03em rgb(235, 228, 228);
+		text-shadow: 0.03em 0.01em rgb(235, 228, 228);
+		padding-top: 0em;
 	}
 	a {
 		color: brown;
@@ -869,7 +881,7 @@
 	}
 	header {
 	    display: flex;
-		padding: 0.1em 1em;
+		padding: 0.1em 3em;
 		justify-content: space-between;
 		border-bottom: 0.5px solid rgb(58, 58, 58 , 0.5);
 		align-items: center;
@@ -919,7 +931,7 @@
 		justify-content: center;
 		align-items: center;
 		background-color: #031327;
-		padding: 2em 1em 1em;
+		padding: 2em 3em 1em;
 		color: honeydew;
 		font-size: 1em;
 		background-image: url("img/creativity.png");
@@ -930,11 +942,12 @@
 		
 	}
 	.pink-box {
-		height: 0.7em;
+		height: 0.3em;
 		background-color: lightcoral;
 	}
 	.grey-box {
 		background-color: #eff2f7;
+		padding: 0.1em 3em;
 	}
 	h1 {
 		font-size: 2em;
@@ -956,13 +969,12 @@
 		text-align: center;
 		margin-bottom: 0em;
 		line-height: 1.4;
-		padding: 0.8em 1em 0em;
+		padding: 0.8em 0em 0em;
 		font-weight: bold;
 		margin-block-start: 0em;
 		margin-block-end: 0em;
 	}
 	.text-center {
-		padding: 0.1em 1em;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -992,7 +1004,7 @@
 		text-align: start;
 	}
 	.effort-sec {
-		padding: 1em 1em 0em;
+		padding: 1em 3em 0em;
 	}
 	.intermidiate {
 		display: none;
@@ -1001,7 +1013,7 @@
 		background-image: url("img/wallpaper-abstracto-3d.jpg");
 		display: flex;
 		flex-direction: column;
-		padding: 0.1em 1em;
+		padding: 0.1em 3em;
 		margin-bottom: 1.5em;
 	}
 	.transparent-box {
@@ -1016,17 +1028,21 @@
 	.transparent-box h2 {
 		margin-top: 0;
 		margin-bottom: 0.2em;
-		padding: 0em 0em;
+		padding: 0em;
 	}
 	.transparent-box p {
 		display: none;
 	}
 
 	.headers {
-		padding: 0.1em 1em;
-		text-align: center;
+		padding: 0.1em 3em;
+		text-align: justify;
 	}
+	.headers p{
+		padding-bottom: 0.4em;
+	   }
 	.headers .boxes {
+		text-align: center;
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
@@ -1045,8 +1061,8 @@
         flex: auto;
 	}
 	.quotes {
-		padding: 0em 1em;
-		margin: 1.5em;
+		padding: 0em 3em;
+		margin: 1.5em 0em;
 		text-align: justify;
 	}
 	.quotes blockquote {
@@ -1057,7 +1073,7 @@
 	}
 	.links {
 		display: flex;
-		padding: 0em 1em;
+		padding: 0em 3em;
 		min-height: 100%;
 		justify-content: space-between;
 		text-align: justify;
@@ -1069,9 +1085,10 @@
 		justify-content: space-between;
 		align-items: center;
 		background-color: #031327;
-		padding: 0.1em 1em;
+		padding: 0.1em 3em;
 		color: honeydew;
 		flex-direction: column;
+		text-align: justify;
 	}
 	fgroup {
 		display: flex;
@@ -1085,7 +1102,8 @@
 		width: 100%;
 	}
 	.shadow {
-		text-shadow: 0.06em 0.03em rgb(235, 228, 228);
+		text-shadow: 0.01em 0.01em rgb(235, 228, 228);
+		
 	}
 	a {
 		color: brown;
@@ -1108,7 +1126,6 @@
 		flex-direction: column;
 		justify-content: center;
 		text-align: justify;
-		padding: 0em 1em;
 	}
 	.epilogue {
 		display: none;
