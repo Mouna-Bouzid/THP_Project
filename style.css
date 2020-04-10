@@ -132,7 +132,7 @@
 		line-height: 1.4;
 		margin-bottom: 1em;
 		margin-top: 2em;
-		font-size: 2.5em;
+		font-size: 3em;
 	}
 	h2,
 	h3,
@@ -162,6 +162,9 @@
 		justify-content: center;
 		text-align: justify;
 	}
+	.wrong {
+		text-align: center;
+	}
 	.text-center span {
 		font-weight: bold;
 		color: red;
@@ -185,6 +188,7 @@
 	}
 	.flex-sec-container ul {
 		line-height: 2;
+		margin-left: 4em;
 	}
 	.effort-sec {
 		padding: 1.5em 9em 0em;
@@ -1002,6 +1006,7 @@
 	.flex-sec-container ul {
 		line-height: 1.5;
 		text-align: start;
+		margin-left: 3em;
 	}
 	.effort-sec {
 		padding: 1em 3em 0em;
